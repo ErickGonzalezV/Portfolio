@@ -1,0 +1,68 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}/* Asegurarnos de que el navbar esté siempre arriba */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* El navbar estará por encima de otros elementos */
+  padding: 1rem 2rem;  /* Ajusta el padding si es necesario */
+}
+
+/* Ajusta el contenido para que no se superponga con el navbar */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Para asegurar que la altura del body ocupe toda la pantalla */
+}
+
+.container {
+  margin-top: 80px; /* Asegúrate de que el contenido no se superponga con el navbar fijo */
+}
+
+/* Opcional: Ajustes para el navbar oscuro */
+.custom-navbar {
+  background-color: rgb(41, 41, 63);
+  color: white; /* Si el navbar es oscuro */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link,
+.custom-navbar .navbar-text {
+  color: white;
+}
+
+/* Estilo general de los botones */
+.btn {
+  transition: transform .7s ease-out;
+}
+
+.btn:active {
+  transform: translateY(.5px);
+}
+
+.move-btn {
+  transform: translateY(.5px);
+  color: rgb(77, 77, 151);
+}
+
+
